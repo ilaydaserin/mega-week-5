@@ -1,0 +1,98 @@
+.navbar{
+  display: grid;
+  grid-template-columns: .6fr 3fr 2fr;
+  padding: 1rem;
+  align-items: center;
+  background-color: #EA906C;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  }
+.navbar .logo{
+    width: 6.5rem;
+}
+.navbar .nav{
+    display: flex;
+    justify-self: center;
+    justify-content: space-around;
+}
+.navbar ul li a{
+    padding: .6rem;
+    font-weight: bold;
+    color: #FFEFE8;
+}
+.navbar .social-icons{
+  display: flex;
+  justify-self: right;
+  justify-content: space-between;
+
+}
+.navbar .social-icons a{
+  padding: .7rem;
+  font-weight: bold;
+  font-size: 25px;
+  color: #FFEFE8;
+}
+  
+
+.intro{
+  /*background: url('../img/background5.jpeg') no-repeat center center/cover;*/
+  height:100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-header h1{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 60px;
+}
+.animation {
+  height:70px;
+  overflow:hidden;
+  margin-left: 1rem;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 3rem;
+}
+
+.animation > div > div {
+  padding: 0.25rem 0.75rem;
+  height:6rem;
+  margin-bottom: 6rem;
+  display:inline-block;
+}
+
+.animation div:first-child {
+  animation: text-animation 8s infinite;
+}
+
+.first div {
+  background-color:#557C55;
+  color: #FFEFE8;
+}
+.second div {
+  background-color:#cd921e;
+  color: #FFEFE8;
+}
+.third div {
+  background-color:#c10528;
+}
+.intro p{
+  margin-top: 3.5rem;
+  width: 60%;
+}
+@keyframes text-animation {
+  0% {margin-top: 0;}
+  10% {margin-top: 0;}
+  20% {margin-top: -5.62rem;}
+  30% {margin-top: -5.62rem;}
+  40% {margin-top: -11.24rem;}
+  60% {margin-top: -11.24rem;}
+  70% {margin-top: -5.62rem;}
+  80% {margin-top: -5.62rem;}
+  90% {margin-top: 0;}
+  100% {margin-top: 0;}
+}
